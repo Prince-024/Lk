@@ -9,7 +9,7 @@ import io
 import os
 intents = discord.Intents.all()
 intents.message_content = True
-bot = Bot('!', intents=intense)
+bot = Bot('!', intents=intents)
 
 @bot.command()
 async def ping(ctx):
