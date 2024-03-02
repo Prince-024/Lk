@@ -7,9 +7,9 @@ from discord.ext.commands import Bot
 from PIL import Image, ImageDraw, ImageFont
 import io
 import os
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.message_content = True
-bot = Bot('!')
+bot = Bot('!', intents=intense)
 
 @bot.command()
 async def ping(ctx):
